@@ -14,15 +14,15 @@ function setup() {
   noStroke();
   fill(color(248, 248, 248));
 
-  chimneyImg = loadImage("assets/chimney.png");
-  houseImg = loadImage("assets/ground.png");
-  giftImg = loadImage("assets/gift.png");
+  chimneyImg = loadImage("chimney.png");
+  houseImg = loadImage("ground.png");
+  giftImg = loadImage("gift.png");
 
   santa = createSprite(w / 2 - 64, h / 2, 128, 128);
 
-  santa.addAnimation("running", "assets/santa1.png", "assets/santa2.png");
-  santa.addAnimation("jumping", "assets/santa3.png");
-  santa.addAnimation("front", "assets/santa4.png");
+  santa.addAnimation("running", "santa1.png", "santa2.png");
+  santa.addAnimation("jumping", "santa3.png");
+  santa.addAnimation("front", "santa4.png");
   santa.animation.frameDelay = 12;
   santa.velocity.x = 14;
 
